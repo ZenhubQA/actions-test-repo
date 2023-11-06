@@ -1,0 +1,10 @@
+name: mqtest
+on:
+  merge_group:
+jobs:
+  mqtest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pull images
+        run: |
+          echo "merge queue test"
